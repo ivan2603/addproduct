@@ -26,7 +26,8 @@ class CartPlugin
         $this->messageManager = $messageManager;
     }
 
-    public function aroundAddProduct(Cart $subject, callable $proceed, $productInfo, $requestInfo = null)
+
+    /*public function aroundAddProduct(Cart $subject, callable $proceed, $productInfo, $requestInfo = null)
     {
         $productType = $productInfo->getTypeId();
         try {
@@ -53,5 +54,5 @@ class CartPlugin
         } catch (LocalizedException $e) {
             $e->getMessage();
         }
-    }
+    }*/
 }

@@ -8,6 +8,11 @@
     <type name="Magento\Checkout\Model\Cart">
         <plugin name="restrict-add-product-to-cart-plugin"
                 type="Module\ProductLabel\Plugin\Magento\Checkout\Model\CartPlugin"
+                sortOrder="1" disabled="true"/>
+    </type>
+    <type name="Magento\Quote\Model\Quote\Item">
+        <plugin name="restrict-set-qty-to-cart-plugin"
+                type="Module\ProductLabel\Plugin\Magento\Quote\Model\Quote\ItemPlugin"
                 sortOrder="1"/>
     </type>
 </config>
